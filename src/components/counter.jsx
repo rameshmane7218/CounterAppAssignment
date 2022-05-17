@@ -2,9 +2,10 @@ import React from "react";
 import { useState } from "react";
 import styles from "./styles.module.css";
 
-const Counter = ()=>{
-    
-    const [counter, setCounter] = useState(0)
+const Counter = (props)=>{
+    // count = Number(count);
+    // console.log(props.initialValue);
+    const [counter, setCounter] = useState(props.initialValue)
     let countColor;
     const isOdd = ()=>{
         if((counter+1)%2 == 0) countColor = true;
