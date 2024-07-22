@@ -3,9 +3,8 @@ import './App.css';
 import Counter from './components/counter';
 
 function App() {
-  
   return (
-    <div className="App container">
+    <div className="App container app-wrapper container app-wrapper">
       <Counter initialValue={0}/>
     </div>
   );
